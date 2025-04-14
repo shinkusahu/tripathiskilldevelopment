@@ -1,0 +1,143 @@
+.donation {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%);
+}
+
+.donation-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.donation-info h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.donation-benefits {
+  display: grid;
+  gap: 2rem;
+}
+
+.benefit {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.benefit h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.benefit p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.donation-form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form h3 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.amount-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.amount-btn {
+  padding: 0.8rem;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background: transparent;
+  color: #3498db;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.amount-btn.active,
+.amount-btn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+  background: #219a52;
+}
+
+.secure-payment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.lock-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 968px) {
+  .donation-content {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,118 @@
+.director-message {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.message-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.director-image {
+  text-align: center;
+}
+
+.image-placeholder {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder .icon {
+  font-size: 6rem;
+}
+
+.director-info {
+  margin-bottom: 2rem;
+}
+
+.director-info h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.designation {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.message-text {
+  position: relative;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.message-text h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.quote-marks {
+  font-size: 4rem;
+  color: #3498db;
+  opacity: 0.2;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  line-height: 1;
+}
+
+.quote-marks.closing {
+  top: auto;
+  left: auto;
+  bottom: 6rem;
+  right: 2rem;
+}
+
+.message {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.signature {
+  margin-top: 3rem;
+  text-align: right;
+}
+
+.signature-img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.sign-name {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.sign-designation {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 968px) {
+  .message-content {
+    grid-template-columns: 1fr;
+  }
+
+  .director-image {
+    margin-bottom: 2rem;
+  }
+}
