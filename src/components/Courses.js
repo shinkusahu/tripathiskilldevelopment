@@ -4,67 +4,67 @@ import './Courses.css';
 const Courses = () => {
   const governmentCourses = [
     {
-      title: 'PMKVY - Computer Hardware',
-      description: 'Government certified course in computer hardware and networking under PMKVY scheme',
+      title: 'PMKVY 4.0 Government Project',
+      description: 'Government certified course in computer hardware and networking under PMKVY scheme. Comprehensive training in computer hardware installation, maintenance, networking fundamentals, and IT support services. The program includes hands-on training with industry-standard equipment and guaranteed placement opportunities in IT service centers and computer hardware companies.',
       duration: '3 months',
       icon: '🖥️',
       scheme: 'PMKVY',
       stipend: 'Yes'
     },
     {
-      title: 'DDU-GKY - Healthcare',
-      description: 'Healthcare and nursing assistant training program under DDU-GKY with guaranteed placement',
+      title: 'UPSDM Government Project',
+      description: 'Comprehensive skill development program under UPSDM (Uttar Pradesh Skill Development Mission) focusing on IT, healthcare, and retail sectors. The program offers industry-aligned training, practical experience, and guaranteed placement opportunities in leading organizations across Uttar Pradesh.',
       duration: '6 months',
-      icon: '⚕️',
-      scheme: 'DDU-GKY',
+      icon: '🎓',
+      scheme: 'UPSDM',
       stipend: 'Yes'
     },
     {
-      title: 'NULM - Beauty & Wellness',
-      description: 'Professional beauty therapy and wellness training under NULM scheme',
+      title: 'BOSCH CSR - Automotive Skills',
+      description: 'Advanced automotive technician training program in partnership with BOSCH. Specialized training in modern automotive technologies, diagnostics, and maintenance. The program includes hands-on training with BOSCH equipment and guaranteed placement in automotive service centers.',
       duration: '4 months',
-      icon: '💆',
-      scheme: 'NULM',
+      icon: '🔧',
+      scheme: 'BOSCH CSR',
       stipend: 'Yes'
     },
     {
-      title: 'PMKVY - Electrical',
-      description: 'Electrical installation and repair training with PMKVY certification',
-      duration: '3 months',
-      icon: '⚡',
-      scheme: 'PMKVY',
+      title: 'ASDC CSR - Digital Skills',
+      description: 'Advanced digital literacy and IT skills training program in partnership with ASDC (Automotive Skill Development Council). Focuses on modern IT technologies, digital marketing, and software development. Includes hands-on training with industry-standard tools and guaranteed placement in tech companies.',
+      duration: '4 months',
+      icon: '💻',
+      scheme: 'ASDC CSR',
       stipend: 'Yes'
     }
   ];
-
-  const regularCourses = [
+  const paidCourses = [
     {
-      title: 'Web Development',
-      description: 'Learn modern web development with HTML, CSS, JavaScript, React and Node.js',
-      duration: '6 months',
-      icon: '💻'
-    },
-    {
-      title: 'Digital Marketing',
-      description: 'Master SEO, social media marketing, content strategy, and online advertising',
+      title: 'CPCT - Computerized Accounting',
+      description: 'Comprehensive course in computer hardware and networking under PMKVY scheme. Comprehensive training in computer hardware installation, maintenance, networking fundamentals, and IT support services. The program includes hands-on training with industry-standard equipment and guaranteed placement opportunities in IT service centers and computer hardware companies.',
       duration: '3 months',
-      icon: '📱'
+      icon: '💰',
+      fee: '₹15,000',
+      placement: 'Yes'
     },
     {
-      title: 'Data Science',
-      description: 'Explore data analysis, machine learning, and statistical modeling',
+      title: 'DCA - Diploma in Computer Applications',
+      description: 'Advanced diploma program covering MS Office, Database Management, Programming, and Web Design. Perfect for building a strong foundation in computer applications and IT skills.',
       duration: '6 months',
-      icon: '📊'
+      icon: '🎓',
+      fee: '₹12000',
+      placement: 'Yes'
     },
     {
-      title: 'Graphic Design',
-      description: 'Create stunning designs with industry-standard tools and techniques',
-      duration: '4 months',
-      icon: '🎨'
+      title: 'PGDCA - Post Graduate Diploma in Computer Applications',
+      description: 'Advanced post-graduate program focusing on advanced programming, database management, software development, and web technologies. Ideal for career advancement in IT industry.',
+      duration: '12 months',
+      icon: '📊',
+      fee: '10000',
+      placement: 'Yes'
     }
   ];
+  
 
-  return (
+  
     <section className="courses" id="courses">
       <div className="container">
         <h2>Government Skill Development Programs</h2>
@@ -88,15 +88,59 @@ const Courses = () => {
         <h2 className="section-title">Professional Courses</h2>
         <p className="section-subtitle">Industry-focused skill development programs</p>
         <div className="courses-grid">
-          {regularCourses.map((course, index) => (
-            <div className="course-card" key={index}>
+          
+        </div>
+      </div>
+    </section>
+  return (
+    <section className="courses" id="courses">
+      <div className="container">
+        <h2 className="section-title">Our Courses</h2>
+        
+        {/* Government Courses Section */}
+        <div className="courses-grid">
+          {governmentCourses.map((course) => (
+            <div key={course.title} className="course-card">
               <div className="course-icon">{course.icon}</div>
               <h3>{course.title}</h3>
               <p>{course.description}</p>
-              <div className="course-duration">
+              <div className="course-details">
+                <span>Duration: {course.duration}</span>
+                <span>Scheme: {course.scheme}</span>
+                {course.stipend && <span>Stipend Available</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+  
+        {/* Regular Courses Section
+        <h3 className="section-subtitle">Regular Courses</h3>
+        <div className="courses-grid">
+          {regularCourses.map((course) => (
+            <div key={course.title} className="course-card">
+              <div className="course-icon">{course.icon}</div>
+              <h3>{course.title}</h3>
+              <p>{course.description}</p>
+              <div className="course-details">
                 <span>Duration: {course.duration}</span>
               </div>
-              <button className="enroll-btn">Enroll Now</button>
+            </div>
+          ))}
+        </div> */}
+  
+        {/* Paid Courses Section */}
+        <h3 className="section-subtitle">Paid Courses</h3>
+        <div className="courses-grid">
+          {paidCourses.map((course) => (
+            <div key={course.title} className="course-card">
+              <div className="course-icon">{course.icon}</div>
+              <h3>{course.title}</h3>
+              <p>{course.description}</p>
+              <div className="course-details">
+                <span>Duration: {course.duration}</span>
+                <span>Fee: {course.fee}</span>
+                {course.placement && <span>Placement Assistance</span>}
+              </div>
             </div>
           ))}
         </div>

@@ -18,23 +18,23 @@ const About = () => {
               <div className="feature">
                 <div className="feature-icon">🎯</div>
                 <h3>Industry-Focused</h3>
-                <p>Curriculum designed with industry experts</p>
+                <p>Curriculum designed with industry experts we have trained candidates 5000+ students</p>
               </div>
               <div className="feature">
                 <div className="feature-icon">👨‍🏫</div>
                 <h3>Expert Trainers</h3>
-                <p>Learn from experienced professionals</p>
+                <p>Learn from experienced professionals we have 100+ trainers</p>
               </div>
               <div className="feature">
                 <div className="feature-icon">🤝</div>
                 <h3>Placement Support</h3>
-                <p>Career guidance and job placement assistance</p>
+                <p>Career guidance and job placement assistance placed 3852 candidates so far</p>
               </div>
             </div>
           </div>
           <div className="about-image">
             <div className="image-container">
-              <div className="background-shape"></div>
+              <img src="./gallery/aboutImage.jpg" alt="About Us" className="about-img" />
             </div>
           </div>
         </div>

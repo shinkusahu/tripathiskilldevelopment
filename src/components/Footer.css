@@ -1,0 +1,19 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 2.5rem 0;
+    margin-top: 4rem;
+    text-align: center;
+  }
+  
+  .footer-text {
+    color: var(--text-color);
+    margin: 0;
+    font-size: var(--font-size-lg); /* Increased from base to lg */
+    font-weight: 500;
+  }
+  
+  .highlight {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--font-size-xl); /* Even larger for highlighted text */
+  }

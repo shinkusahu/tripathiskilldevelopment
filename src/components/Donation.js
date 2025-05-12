@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Donation.css';
-
+import qr from '../assest/qr.jpg'
 const Donation = () => {
   const [amount, setAmount] = useState('');
   const [donorName, setDonorName] = useState('');
@@ -93,9 +93,15 @@ const Donation = () => {
               <button type="submit" className="donate-btn">
                 Donate Now
               </button>
-              <div className="secure-payment">
-                <span className="lock-icon">🔒</span>
-                <p>Secure Payment | 100% Tax Exemption under 80G</p>
+              <div className="qr-section">
+                <h3>Scan to Donate</h3>
+                <div className="qr-code">
+                  <img src={qr} alt="Donation QR Code" />
+                </div>
+                <div className="secure-payment">
+                  <span className="lock-icon">🔒</span>
+                  <p>Secure Payment | 100% Tax Exemption under 80G</p>
+                </div>
               </div>
             </form>
           </div>

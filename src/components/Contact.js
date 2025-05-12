@@ -35,21 +35,21 @@ const Contact = () => {
                 <span className="icon">📍</span>
                 <div>
                   <h3>Visit Us</h3>
-                  <p>123 Education building kostha, Rewa, India</p>
+                  <p>Boda Baag,Neem Chuaraha, Rewa,MP 486001, India</p>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="icon">📞</span>
                 <div>
                   <h3>Call Us</h3>
-                  <p>+91 9827234393</p>
+                  <p>+91 +918085310892</p>
                 </div>
               </div>
               <div className="contact-item">
                 <span className="icon">✉️</span>
                 <div>
                   <h3>Email Us</h3>
-                  <p>info@tsdf.edu.in</p>
+                  <p>info@tripathiskilldevelopmnet.co.in</p>
                 </div>
               </div>
             </div>
