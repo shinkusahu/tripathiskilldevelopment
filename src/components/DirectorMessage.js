@@ -12,11 +12,11 @@ const DirectorMessage = () => {
             </div>
             <div className="director-info">
               <h3>Mr.Prashant Tripathi</h3>
-              <p className="designation">Founder & Director</p>
+              <p className="designation">Founder</p>
             </div>
           </div>
           <div className="message-text">
-            <h2>Director's Message</h2>
+            <h2>Founder's Message</h2>
             <div className="quote-marks">❝</div>
             <p className="message">
               Welcome to Tripathi Skill Development Foundation. Our mission is to empower youth with practical skills
@@ -36,7 +36,6 @@ const DirectorMessage = () => {
             <div className="signature">
               <img src="/signature.png" alt="Director's Signature" className="signature-img" />
               <p className="sign-name"> Mr. Prashant Tripathi</p>
-              <p className="sign-designation">Ph.D., Skill Development & Education</p>
             </div>
           </div>
         </div>
